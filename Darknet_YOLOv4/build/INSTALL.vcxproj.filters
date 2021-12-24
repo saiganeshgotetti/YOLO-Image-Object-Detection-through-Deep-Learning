@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Darknet_YOLOv4\build\CMakeFiles\6e83a3a4c083f8a375692a49287361f1\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{086DC9B2-9BF1-38DE-AC68-705BE2A85598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

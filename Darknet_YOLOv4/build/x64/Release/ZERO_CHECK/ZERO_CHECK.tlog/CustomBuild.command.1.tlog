@@ -1,0 +1,10 @@
+^C:\DARKNET_YOLOV4\BUILD\CMAKEFILES\6E83A3A4C083F8A375692A49287361F1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Darknet_YOLOv4 -BC:/Darknet_YOLOv4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Darknet_YOLOv4/build/Darknet.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

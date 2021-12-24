@@ -1,0 +1,10 @@
+C:/Darknet_YOLOv4/darknet.lib
+C:/Darknet_YOLOv4/darknet.dll
+C:/Darknet_YOLOv4/include/darknet/darknet.h
+C:/Darknet_YOLOv4/include/darknet/yolo_v2_class.hpp
+C:/Darknet_YOLOv4/uselib.exe
+C:/Darknet_YOLOv4/darknet.exe
+C:/Darknet_YOLOv4/share/darknet/DarknetTargets.cmake
+C:/Darknet_YOLOv4/share/darknet/DarknetTargets-release.cmake
+C:/Darknet_YOLOv4/share/darknet/DarknetConfig.cmake
+C:/Darknet_YOLOv4/share/darknet/DarknetConfigVersion.cmake
