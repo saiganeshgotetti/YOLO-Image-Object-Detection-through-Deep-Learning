@@ -19,9 +19,9 @@ It's a Computer Vision project, where objects are detected from image, video and
 
     	Improved network architecture: Backbone is optimized and Neck (PAN) uses Cross-stage-partial (CSP) connections and Mish    activation.
 
-![img_2.png](img_2.png)
+![img_2.png](Darknet_YOLOv4/data/readme_data/src/img_2.png)
 
-![img_1.png](img_1.png)
+![img_1.png](Darknet_YOLOv4/data/readme_data/src/img_1.png)
 
 
 Precision & recall
@@ -32,15 +32,29 @@ IoU measures the overlap between 2 boundaries. We use that to measure how much o
 
 
 Mish, a novel self-regularized non-monotonic activation function which can be mathematically defined as:
- ![img_3.png](img_3.png)
+ ![img_3.png](Darknet_YOLOv4/data/readme_data/src/img_3.png)
 
 As activation functions play a crucial role in the performance and training dynamics in neural networks, we validated experimentally on several well-known benchmarks against the best combinations of architectures and activation functions. We also observe that data augmentation techniques have a favorable effect on benchmarks like ImageNet-1k and MS-COCO across multiple architectures. For example, Mish outperformed Leaky ReLU on YOLOv4 with a CSP-DarkNet-53 backbone on average precision (APval50) by 2.1% in MS- COCO object detection and ReLU on ResNet-50 on ImageNet-1k in Top-1 accuracy by ≈1% while keeping all other network parameters and hyperparameters constant. Furthermore, we explore the mathematical formulation of Mish about the Swish family of functions and propose an intuitive understanding of how the first derivative behavior may be acting as a regularize helping the optimization of deep neural networks. Code is publicly available.
 
 **Bounding Box** with dimension priors and location prediction. We predict the height and width the box of the box offsets and cluster centroids. We predict the center coordinates relative to the location of the filter application using the sigmoid function. This figure blatantly self-plagiarised
  
-![img_5.png](img_5.png)
+![img_5.png](Darknet_YOLOv4/data/readme_data/src/img_5.png)
 
-**_Running Object Detection on images and videos with DARKNET:_**![img_6.png](img_6.png)
+**_Running Object Detection on images and videos with DARKNET:_**![img_6.png](Darknet_YOLOv4/data/readme_data/src/img_6.png)
 
 **_with YOLOv4:_**
 
+_Before detection images:_
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+
+**_After Running YOLOv4 Object Detection on above images:_**
+Executing the following command:
+`darknet.exe detect cfg/yolov4.cfg yolov4.weights data/(image_name).jpg`
+
+_The objects detected through those images are:_
+![img.png](img.png)
