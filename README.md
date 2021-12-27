@@ -45,16 +45,36 @@ As activation functions play a crucial role in the performance and training dyna
 **_with YOLOv4:_**
 
 _Before detection images:_
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
+![img.png](Darknet_YOLOv4/data/mumbai-india.jpg)
+
+![img_1.png](Darknet_YOLOv4/data/kolkata2.jpg)
+
+![img_2.png](Darknet_YOLOv4/data/kolkata.jpg)
+![img_3.png](Darknet_YOLOv4/data/hyderabad_traffic.jpg)
+![img_4.png](Darknet_YOLOv4/data/zoo_park.jpg)
+![img_5.png](Darknet_YOLOv4/data/person.jpg)
 
 **_After Running YOLOv4 Object Detection on above images:_**
+
 Executing the following command:
+
 `darknet.exe detect cfg/yolov4.cfg yolov4.weights data/(image_name).jpg`
 
-_The objects detected through those images are:_
-![img.png](img.png)
+![img.png](Darknet_YOLOv4/data/readme_data/command_prompt.jpg)
+![img.png](Darknet_YOLOv4/data/readme_data/command_prompt2.jpg)
+
+
+**_The objects detected through those images are:_**
+
+![img.png](Darknet_YOLOv4/results/predictions_mumbai-india.jpg)
+![img_1.png](Darknet_YOLOv4/results/predictions_kolkata2.jpg)
+![img_2.png](Darknet_YOLOv4/results/predictions_kolkata.jpg)
+![img_3.png](Darknet_YOLOv4/results/predictions_hyderabad_traffic.jpg)
+![img_4.png](Darknet_YOLOv4/results/predictions.jpg)
+![img_5.png](Darknet_YOLOv4/results/predictions_person.jpg)
+
+**_Similarly, Object Detection with videos is done, a sample one before detection_**
+
+[![video](Darknet_YOLOv4/test/video.gif)](Darknet_YOLOv4/test/video.mp4)
+
+_Execute the command:_
