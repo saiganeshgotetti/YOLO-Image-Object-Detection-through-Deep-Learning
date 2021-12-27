@@ -75,6 +75,6 @@ Executing the following command:
 
 **_Similarly, Object Detection with videos is done, a sample one before detection_**
 
-[![video](Darknet_YOLOv4/test/video.gif)](Darknet_YOLOv4/test/video.mp4)
+[![video](Darknet_YOLOv4/test/video.gif)](https://user-images.githubusercontent.com/63163043/147474939-f9870252-9627-48b9-9c55-96f40189b3b2.mp4)
 
 _Execute the command:_
