@@ -100,7 +100,7 @@ For that command used is
 
 For instance, we just took some dataset [images](https://storage.googleapis.com/openimages/web/index.html) and trained images with **plant** and **tree** labels, obtained weights, ran inference 
 
-![img.png](Darknet_YOLOv4/data/readme_data/terminal.jpg)
+![img.png](Darknet_YOLOv4/data/readme_data/train.jpg)
 ![img_1.png](Darknet_YOLOv4/data/readme_data/terminal2.jpg)
 ![img_2.png](Darknet_YOLOv4/data/readme_data/terminal3.jpg)
 Successfully, my custom object detection worked perfectly as we can see it detected plant and tree objects from my apartment balcony view consisting some flower pots and plants(live detection).
