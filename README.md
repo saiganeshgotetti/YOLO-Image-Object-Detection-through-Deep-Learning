@@ -73,8 +73,36 @@ Executing the following command:
 ![img_4.png](Darknet_YOLOv4/results/predictions.jpg)
 ![img_5.png](Darknet_YOLOv4/results/predictions_person.jpg)
 
-**_Similarly, Object Detection with videos is done, a sample one before detection_**
+_Similarly, **Object Detection with videos** is done but this time with **Scaled YOLOv4's CSP**(Cross Stage Partial), a sample one(randomly chosen from youtube) video before detection:_
 
-[![video](Darknet_YOLOv4/test/video.gif)](Darknet_YOLOv4/test/video.mp4)
+[![video](Darknet_YOLOv4/test/video.gif)](https://user-images.githubusercontent.com/63163043/147474939-f9870252-9627-48b9-9c55-96f40189b3b2.mp4)
+
+**_Please Note:_** Before Running the Object Detection environment on this video, please download the csp weights and configuration files from the given links at the end of this readme and store the **.cfg file** into **cfg folder** while the **.weights file** will be place in the main directory
 
 _Execute the command:_
+
+`darknet.exe detector demo cfg/coco.data cfg/yolov4-csp.cfg yolov4-csp.weights -ext_output test/(video_name).mp4 -out_filename results.mp4`
+
+_With this command our object detected video is saved in the main directory as 'results.mp4'(you can name anything to the file in command to save file in your chosen name format)_
+
+![img.gif](Darknet_YOLOv4/results/terminal.gif)
+![img_1.png](Darknet_YOLOv4//data/readme_data/terminal.jpg)
+
+**_The Object Detected Video after inference with Scaled YOLOv4's CSP can seen below:_**
+
+![img_2.gif](Darknet_YOLOv4/results/video_detections.gif)
+
+_Here, **MS-COCO**(**M**icro**S**oft **C**ommon **O**bjects in **CO**ntext) [dataset](Darknet_YOLOv4/data/coco.names) having 80 different object labels_. If you want to have your own custom dataset with object labels that you want detect the objects from image and video(from source or live),then we should **_train with custom dataset for obtaining custom weights_**, which can be used for inference.
+
+For that command used is
+`python generate_train.py`
+`darknet.exe detector train data/obj.data cfg/yolov4-p5_custom.cfg darknet53.conv.74`
+
+For instance, we just took some dataset [images](https://storage.googleapis.com/openimages/web/index.html) and trained images with **plant** and **tree** labels, obtained weights, ran inference 
+
+![img.png](Darknet_YOLOv4/data/readme_data/terminal.jpg)
+![img_1.png](Darknet_YOLOv4/data/readme_data/terminal2.jpg)
+![img_2.png](Darknet_YOLOv4/data/readme_data/terminal3.jpg)
+Successfully, my custom object detection worked perfectly as we can see it detected plant and tree objects from my apartment balcony view consisting some flower pots and plants(live detection).
+![img_3.png](Darknet_YOLOv4/data/readme_data/custom-detection.jpg)
+
