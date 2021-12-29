@@ -40,9 +40,9 @@ As activation functions play a crucial role in the performance and training dyna
  
 ![img_5.png](Darknet_YOLOv4/data/readme_data/src/img_5.png)
 
-**_Running Object Detection on images and videos with DARKNET:_**![img_6.png](Darknet_YOLOv4/data/readme_data/src/img_6.png)
+<ins>**_Running Object Detection on images and videos with DARKNET:_**</ins>![img_6.png](Darknet_YOLOv4/data/readme_data/src/img_6.png)
 
-**_with YOLOv4:_**
+<ins>**_with YOLOv4:_**</ins>
 
 _Before detection images:_
 ![img.png](Darknet_YOLOv4/data/mumbai-india.jpg)
@@ -106,3 +106,29 @@ For instance, we just took some dataset [images](https://storage.googleapis.com/
 Successfully, my custom object detection worked perfectly as we can see it detected plant and tree objects from my apartment balcony view consisting some flower pots and plants(live detection).
 ![img_3.png](Darknet_YOLOv4/data/readme_data/custom-detection.jpg)
 
+<ins>For training images, we can also use **_Microsoft Azure's Cognitive Services [Custom Vision](https://www.customvision.ai)_**</ins>
+
+![img.png](TensorFlow_YOLOv4/data/readme_src/azure_cv.png)
+
+For this project instance, we have done labeling with crop and weed as labels for sample dataset of Crop and Weed Classification project in **Azure** **_to generate custom trained model_**:
+![img.png](TensorFlow_YOLOv4/data/readme_src/azure's_cv.jpg)
+![img_1.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition%20(1).gif)
+![img_2.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition%20(5).gif)
+![img_3.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition%20(3).gif)
+![img_4.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition%20(4).gif)
+![img_5.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition%20(2).gif)
+After Advance Training(Remember to select '**General(Compact) domain**') with more Iterations, we get the trained weights model:
+![img.png](TensorFlow_YOLOv4/data/readme_src/domains.png)
+![img_6.gif](TensorFlow_YOLOv4/data/readme_src/azure's_cv_image_recognition.gif)
+This trained weights can be saved as a **TensorFlow Model** with **Export** option:
+![img_7.png](TensorFlow_YOLOv4/data/readme_src/azure's_cv3.jpg)
+![img_8.png](TensorFlow_YOLOv4/data/readme_src/azure's_cv2.jpg)
+
+_Now, we can use those custom object labels weights '**.tf**' models locally into your project._
+
+<ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>
+![img_5.png](img_5.png)
+Before we use those custom trained weights in 'tf' model, you should setup a TensorFlow environment, to do that please install the [file](TensorFlow_YOLOv4/conda-gpu.yml) with the command:
+`conda env create -f conda-gpu.yml`
+in Anaconda prompt or comman prompt and activate it:
+`conda activate TensorFlow2_YOLOv4_GPU`

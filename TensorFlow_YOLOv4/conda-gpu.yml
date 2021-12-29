@@ -1,0 +1,17 @@
+name: TensorFlow2_YOLOv4_GPU
+
+dependencies:
+  - conda-forge:
+    - pip
+    - python
+    - matplotlib
+    - opencv
+    - cudnn
+    - cudatoolkit
+    - tensorflow-gpu
+    - opencv-python
+    - lxml
+    - tqdm
+    - absl-py
+    - easydict
+    - pillow
