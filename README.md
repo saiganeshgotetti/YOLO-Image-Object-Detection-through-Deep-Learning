@@ -127,8 +127,61 @@ This trained weights can be saved as a **TensorFlow Model** with **Export** opti
 _Now, we can use those custom object labels weights '**.tf**' models locally into your project._
 
 <ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>
-![img_5.png](img_5.png)
+![img_9.png](TensorFlow_YOLOv4/data/readme_src/tf.png)
 Before we use those custom trained weights in 'tf' model, you should setup a TensorFlow environment, to do that please install the [file](TensorFlow_YOLOv4/conda-gpu.yml) with the command:
+
 `conda env create -f conda-gpu.yml`
-in Anaconda prompt or comman prompt and activate it:
+
+in Anaconda prompt or command prompt and activate it:
+
 `conda activate TensorFlow2_YOLOv4_GPU`
+![img.gif](TensorFlow_YOLOv4/data/readme_src/tf_terminal.gif)
+![img_2.gif](TensorFlow_YOLOv4/data/readme_src/tf_terminal2.gif)
+
+_To implement **YOLOv4 or Scaled YOLOv4** using TensorFlow, initially we must convert the **.weights** into the corresponding **TensorFlow model** files and then run the model._
+
+**_Convert darknet weights to tensorflow_**
+
+**YOLOv4**
+`python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4`
+
+**YOLOv4-tiny**
+`python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints/yolov4-tiny-416 --input_size 416 --model yolov4 --tiny`
+
+**custom yolov4**
+`python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4` 
+
+For running inference on different images and videos, you should execute the following commands:
+
+_For Images:_
+`python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --images ./data/images/(image-name).jpg`
+
+_Run yolov4-tiny tensorflow model_
+`python detect.py --weights ./checkpoints/yolov4-tiny-416 --size 416 --model yolov4 --images ./data/images/(image_name).jpg --tiny`
+
+_Run custom yolov4 tensorflow model_
+`python detect.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --images ./data/images/(image_name).jpg`
+
+Now, you can also use the above Azure's CV generated TensorFlow model here.
+
+_For Videos:_
+
+_Run yolov4 on video_
+`python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/(video_name).mp4 --output ./detections/results.mp4`
+
+_Run custom yolov4 model on video_
+`python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video ./data/video/(video_name).mp4 --output ./detections/results.mp4`
+
+_Run yolov4 on webcam_
+`python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video 0 --output ./detections/results.mp4`
+
+_**The detection be like similar to the Darknet Detection**_ (Inference ran on random youtube video):
+
+![img.gif](TensorFlow_YOLOv4/data/readme_src/detection.gif)
+
+and for image:
+
+![img_2.png](TensorFlow_YOLOv4/data/readme_src/image_detection.jpg)
+
+<ins>_**Object Detection on images and videos with PYTORCH:**_</ins>
+
