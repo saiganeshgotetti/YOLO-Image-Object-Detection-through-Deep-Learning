@@ -126,8 +126,8 @@ This trained weights can be saved as a **TensorFlow Model** with **Export** opti
 
 _Now, we can use those custom object labels weights '**.tf**' models locally into your project._
 
-<ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>
-![img_9.png](TensorFlow_YOLOv4/data/readme_src/tf.png)
+<ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>![img_9.png](TensorFlow_YOLOv4/data/readme_src/tf2.jpg)
+
 Before we use those custom trained weights in 'tf' model, you should setup a TensorFlow environment, to do that please install the [file](TensorFlow_YOLOv4/conda-gpu.yml) with the command:
 
 `conda env create -f conda-gpu.yml`
