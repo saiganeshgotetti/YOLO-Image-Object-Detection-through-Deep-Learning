@@ -1,3 +1,4 @@
+![img.gif](Darknet_YOLOv4\data\readme_data\src\YOLO_Image_Object_Detection_through_Deep_Learning.gif)
 # YOLO-Image-Object-Detection-through-Deep-Learning
 It's a Computer Vision project, where objects are detected from image, video and also in live(webcam or camera) using bounding boxes with respective object label class.  
 
@@ -187,3 +188,34 @@ and for image:
 
 <ins>_**Object Detection on images and videos with PYTORCH:**_</ins>
 
+![img.png](PyTorch_ScaledYOLOv4\data\readme_src\pt.png)
+
+_Initially to implement **YOLOv4 or Scaled YOLOv4** with PyTorch, we have setup an environment for YOLOv4 with PyTorch in **Anaconda** Prompt or Navigator <img align="center" width="50" height="50" src="PyTorch_ScaledYOLOv4\data\readme_src\anaconda-pythonsmall.png"> for efficient module run:_
+
+We can do this by following commands and running **requirements.txt** file:
+
+
+_**pip/conda install required packages**_
+
+`conda install seaborn thop`
+
+_**install mish-cuda if you want to use mish activation**_ using links 
+https://github.com/thomasbrandon/mish-cuda
+
+https://github.com/JunnYu/mish-cuda 
+
+`cd /`
+
+`git clone https://github.com/JunnYu/mish-cuda`
+
+`cd mish-cuda`
+
+`python setup.py build install`
+
+but don't worry, there's already genereated Mish-Cuda folder which is included in repo above.
+
+`conda install -r requirements.txt`
+
+_**Now for given generating the YOLOv4 and Scaled YOLOv4(csp, p5, p6, p7) weights in PyTorch models by training with configurations located in config folder, run command:**_
+`python train.py --device 0 --batch-size 16 --img 640 640 --data coco.yaml --cfg cfg/yolov4-p7.yaml --weights '' --name yolov4-p7`
+where the **.pt** will be generated in **weights** folder
