@@ -42,7 +42,7 @@ As activation functions play a crucial role in the performance and training dyna
  
 ![img_5.png](Darknet_YOLOv4/data/readme_data/src/img_5.png)
 
-<ins>**_Running Object Detection on images and videos with DARKNET:_**</ins>![img_6.png](Darknet_YOLOv4/data/readme_data/src/img_6.png)
+## <ins>**_Running Object Detection on images and videos with DARKNET:_**</ins>![img_6.png](Darknet_YOLOv4/data/readme_data/src/img_6.png)
 
 <ins>**_with YOLOv4:_**</ins>
 
@@ -128,7 +128,7 @@ This trained weights can be saved as a **TensorFlow Model** with **Export** opti
 
 _Now, we can use those custom object labels weights '**.tf**' models locally into your project._
 
-<ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>
+## <ins>**_Object Detection on images and videos with TENSORFLOW:_**</ins>
 
 ![img_9.png](TensorFlow_YOLOv4/data/readme_src/tf2.png)
 
@@ -179,7 +179,7 @@ _Run custom yolov4 model on video_
 _Run yolov4 on webcam_
 `python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video 0 --output ./detections/results.mp4`
 
-_**The detection be like similar to the Darknet Detection**_ (Inference ran on random youtube video):
+#### _**The detection be like similar to the Darknet Detection**_ (Inference ran on random youtube video):
 
 ![img.gif](TensorFlow_YOLOv4/data/readme_src/detection.gif)
 
@@ -187,15 +187,15 @@ and for image:
 
 ![img_2.png](TensorFlow_YOLOv4/data/readme_src/image_detection.jpg)
 
-<ins>_**Object Detection on images and videos with PYTORCH:**_</ins>
+## <ins>_**Object Detection on images and videos with PYTORCH:**_</ins>
 
 ![img_pt.png](PyTorch_ScaledYOLOv4/data/readme_src/pt.png)
 
 _Initially to implement **YOLOv4 or Scaled YOLOv4** with PyTorch, we have setup an environment for YOLOv4 with PyTorch in **Anaconda** Prompt or Navigator <img align="center" width="50" height="50" src="PyTorch_ScaledYOLOv4\data\readme_src\anaconda-pythonsmall.png"> for efficient module run:_
 
 We can do this by following commands and running **requirements.txt** file:
-
-
+![img_pt2.gif](PyTorch_ScaledYOLOv4/data/readme_src/PyTorch_Setup.gif)
+![img_pt3.gif](PyTorch_ScaledYOLOv4/data/readme_src/PyTorch_Setup2.gif)
 _**pip/conda install required packages**_
 
 `conda install seaborn thop`
@@ -212,11 +212,23 @@ https://github.com/JunnYu/mish-cuda
 `cd mish-cuda`
 
 `python setup.py build install`
-
-but don't worry, there's already genereated Mish-Cuda folder which is included in repo above.
+![img_pt4.gif](PyTorch_ScaledYOLOv4/data/readme_src/PyTorch_mish_cuda.gif)
+but don't worry, there's already generated Mish-Cuda folder which is included in repo above.
 
 `conda install -r requirements.txt`
 
 _**Now for given generating the YOLOv4 and Scaled YOLOv4(csp, p5, p6, p7) weights in PyTorch models by training with configurations located in config folder, run command:**_
 `python train.py --device 0 --batch-size 16 --img 640 640 --data coco.yaml --cfg cfg/yolov4-p7.yaml --weights '' --name yolov4-p7`
-where the **.pt** will be generated in **weights** folder
+where the **.pt** files will be generated in **weights** folder
+
+**_To run the test, inference on the live webcam for testing the generated Scaled YOLOv4 weights above, the command given:_**
+
+`python detect.py --source 0`
+
+### **_Object Detection with PyTorch using Scaled YOLOv4:_**
+![img_pt5.png](PyTorch_ScaledYOLOv4/data/readme_src/Picture1.png)
+![img_pt6.png](PyTorch_ScaledYOLOv4/data/readme_src/PyTorch_Object_Detection.png)
+![img_pt7.png](PyTorch_ScaledYOLOv4/data/readme_src/PyTorch_Object_Detection2.png)
+
+### Acknowledgements
+
