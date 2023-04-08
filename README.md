@@ -1,4 +1,4 @@
-![img.gif](Darknet_YOLOv4\data\readme_data\src\YOLO_Image_Object_Detection_through_Deep_Learning.gif)
+![img_main.gif](Darknet_YOLOv4\data\readme_data\src\YOLO_Image_Object_Detection_through_Deep_Learning.gif)
 # YOLO-Image-Object-Detection-through-Deep-Learning
 It's a Computer Vision project, where objects are detected from image, video and also in live(webcam or camera) using bounding boxes with respective object label class.  
 
@@ -188,7 +188,7 @@ and for image:
 
 <ins>_**Object Detection on images and videos with PYTORCH:**_</ins>
 
-![img.png](PyTorch_ScaledYOLOv4\data\readme_src\pt.png)
+![img_pt.png](PyTorch_ScaledYOLOv4\data\readme_src\pt.png)
 
 _Initially to implement **YOLOv4 or Scaled YOLOv4** with PyTorch, we have setup an environment for YOLOv4 with PyTorch in **Anaconda** Prompt or Navigator <img align="center" width="50" height="50" src="PyTorch_ScaledYOLOv4\data\readme_src\anaconda-pythonsmall.png"> for efficient module run:_
 
