@@ -1,4 +1,4 @@
-<img alt="img_main.gif" src="Darknet_YOLOv4/data/readme_data/src/YOLO_Image_Object_Detection_through_Deep_Learning.gif"/>
+<img alt="img_main.gif" src="Darknet_YOLOv4/data/readme_data/src/YOLO_Image_Object_Detection_through_Deep_Learning2.gif"/>
 
 # YOLO-Image-Object-Detection-through-Deep-Learning
 It's a Computer Vision project, where objects are detected from image, video and also in live(webcam or camera) using bounding boxes with respective object label class.  
