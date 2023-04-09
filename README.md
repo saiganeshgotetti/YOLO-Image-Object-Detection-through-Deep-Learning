@@ -219,8 +219,9 @@ but don't worry, there's already generated Mish-Cuda folder which is included in
 
 * _**Now for given generating the YOLOv4 and Scaled YOLOv4(csp, p5, p6, p7) weights in PyTorch models by training with configurations located in config folder, run command:**_
 `python train.py --device 0 --batch-size 16 --img 640 640 --data coco.yaml --cfg cfg/yolov4-p7.yaml --weights '' --name yolov4-p7`
-where the **.pt** files will be generated in **weights** folder
+where the **.pt** files will be generated in **weights** folder.
 
+Please checkout the weights folder, there's already ".pt" files generated.
 * **_To run the test, inference on the live webcam for testing the generated Scaled YOLOv4 weights above, the command given:_**
   
    `python detect.py --source 0`
